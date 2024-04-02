@@ -1,0 +1,22 @@
+print("zdravim vas programu kalkulacka")
+while True:
+  cislo1 = float(input("napiste cislo: "))
+  cislo2 = float(input("napiste cislo: "))
+  operace=input("jakou operaci chcete provest? (+, -, *, /): ")
+  if operace == "+":
+    print (cislo1+ cislo2)
+  elif operace == "-":
+    print (cislo1 - cislo2)
+  elif operace == "*":
+    print (cislo1 * cislo2)
+  elif operace == "/":
+    if cislo2 != 0:
+      print (cislo1 / cislo2)
+    else:
+      print("error :(")
+  else:
+    print("neznama operace")
+  konec = input("chcete pokracovat? (ano/ne): ")
+  if konec == "ne":
+    print("konec programu kalkulacky dekuju vam za pouziti")
+    break
